@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="library_red">#ef4147</color>
+    <color name="text_title">#201f1f</color>
+    <color name="bottom">#eeeeee</color>
+    <color name="library_norall">#514b4b</color>
+    <color name="library_gray">#595959</color>
+    <color name="library_line">#999999</color>
+    <color name="library_lines">#d7d6d6</color>
+    <color name="library_top">#b9b9b9</color>
+</resources>

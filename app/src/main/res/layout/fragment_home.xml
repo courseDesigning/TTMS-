@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/library_red"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/my_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="TTMS影院"/>
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/serach"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <com.example.katherine_qj.ttms.model.CustomerViewPager
+        android:id="@+id/set_fragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+    </com.example.katherine_qj.ttms.model.CustomerViewPager>
+
+    <TextView
+        android:background="@color/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/library_red"
+        android:text="公告+新闻"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/my_login_fragment_style"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="即将有大片要上映啦"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <TextView
+                android:background="#e2e2e2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="今天中午食堂供应。。。"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <TextView
+                android:background="#e2e2e2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="下月初全线大幅降价"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <TextView
+                android:background="#e2e2e2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="5月优秀员工表彰"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <TextView
+                android:background="#e2e2e2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="影院和万达集团签订长期合作"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+            <TextView
+                android:background="#e2e2e2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="六月聚餐事宜"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

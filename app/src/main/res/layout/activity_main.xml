@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:background="@color/bottom"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radiobutton_home"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/library_red"
+            android:gravity="center"
+            android:text="影院"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_button_home_seletor" />
+        <RadioButton
+            android:id="@+id/radiobutton_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/library_norall"
+            android:gravity="center"
+            android:text="管理"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radi0_button_set_seletor" />
+        <RadioButton
+            android:id="@+id/radiobutton_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/library_norall"
+            android:gravity="center"
+            android:text="我的"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_button_seletor_my" />
+    </RadioGroup>
+</LinearLayout>

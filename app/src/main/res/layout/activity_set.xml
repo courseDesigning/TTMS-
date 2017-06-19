@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/library_red"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/my_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="TTMS管理端"/>
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@mipmap/serach"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radio_group_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/bottom"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobutton_room"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/library_red"
+            android:gravity="center"
+            android:text="演出厅"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_button_nitice_seletor" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/library_norall"
+            android:gravity="center"
+            android:text="演出计划"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_button_news_seletor" />
+        <RadioButton
+            android:id="@+id/radiobutton_voide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/library_norall"
+            android:gravity="center"
+            android:text="剧目"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_button_nitice_seletor" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:textColor="@color/library_norall"
+            android:gravity="center"
+            android:text="员工"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/radio_button_news_seletor" />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
